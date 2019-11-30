@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=cleanifiq
+POSTGRES_USER=kchNwmNpQNmHVpeGFkbUkfRFzouvNKzo
+POSTGRES_PASSWORD=LKBobhSfJXErnraVrQg7b9EgB62HLgefpbWPYu9KwYixr7vRV8VOH62lraSDSZAC
