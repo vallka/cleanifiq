@@ -8,16 +8,18 @@ User = get_user_model()
 class UserChangeForm(forms.UserChangeForm):
     class Meta(forms.UserChangeForm.Meta):
         model = User
+        fields = ('username', 'email', 'first_name', 'last_name')
 
 
 class UserCreationForm(forms.UserCreationForm):
 
     error_message = forms.UserCreationForm.error_messages.update(
-        {"duplicate_username": _("This username has already been taken.")}
+        {"duplicate_username": _("This awersome username has already been taken.")}
     )
 
     class Meta(forms.UserCreationForm.Meta):
         model = User
+        fields = ('username', 'email', 'first_name', 'last_name')
 
     def clean_username(self):
         username = self.cleaned_data["username"]
